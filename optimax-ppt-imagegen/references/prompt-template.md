@@ -8,9 +8,9 @@ CORE_MESSAGE: one conclusion the viewer should understand
 LAYOUT_FAMILY: Stage rollout | Problem–solution–value | Operations pipeline | Agent orchestration
 MODULES_AND_FLOW: 3–7 modules and their directional relationships
 EXACT_LABELS: exact short Chinese labels to render
-STATUS_MODE: neutral | status-aware (default: neutral)
-VERIFIED_SUCCESS_ITEMS: only items explicitly confirmed as completed, passed, verified, or successful; otherwise none
-PENDING_RISK_ITEMS: only items explicitly marked pending approval, warning, risk, reminder, or adverse consequence; otherwise none
+COLOR_ENCODING_MODE: functional | status
+COLOR_ROLE_MAP: explicit mapping from navy, cobalt, green, orange, and optional red to stages, module families, or statuses
+ACCENT_TARGETS: exact headings, icons, connectors, badges, or pale card tints that receive each accent
 TITLE_SAFE_AREA: default top 15%
 ```
 
@@ -36,13 +36,18 @@ Layout behavior:
 - Operations pipeline: arrange signal inputs across the top, a dominant horizontal processing band in the center, supporting graph, Agent, or approval cards below, and 3–4 result cards on the right.
 - Agent orchestration: arrange requests on the left, task decomposition next, a central orchestration hub with surrounding Agent nodes, human approval above, reusable capabilities below, and result cards on the right.
 
-Color palette: deep navy #173F5F and cobalt blue #2F6FED for all status-neutral structure; support green #2E8B57 only as a small verified-success status accent; orange #D98A00 only as a small pending, approval, warning, risk, reminder, or adverse-consequence accent; white cards; very pale blue background; cool blue-gray outlines. Avoid purple and strong gradients.
+Color palette: deep navy #173F5F and cobalt blue #2F6FED as the visual anchor; support green #2E8B57 and orange #D98A00 as restrained accents; optional red only for genuine high risk or failure; white cards; very pale blue background; cool blue-gray outlines. Use at most three accent families beyond neutral blue-gray. Avoid purple and strong gradients.
 
 Typography: modern Chinese sans-serif appearance, bold deep-navy headings, short labels only, large enough for presentation readability. Render only the supplied text and render it verbatim. Do not invent English subtitles, paragraphs, placeholder copy, fake glyphs, or extra labels.
 
 Text (verbatim): {{EXACT_LABELS}}
 
-Semantic color rules: status mode is {{STATUS_MODE}}. All architecture, process, gate, capability, output, publication, feedback, future-step, and value nodes are status-neutral by default and must use navy or cobalt blue. Green does not mean category or importance: use it only for these explicitly verified success items: {{VERIFIED_SUCCESS_ITEMS}}. Orange does not mean visual variety: use it only for these explicitly pending or risk items: {{PENDING_RISK_ITEMS}}. When either list is empty, do not use that accent color. Apply status colors only to a small badge, check, dot, or short status label—never to the full card, stage heading, main label, or primary icon. Pair color with a status word or icon. The reference image may contain green or orange modules; ignore that usage when it conflicts with these rules.
+Color encoding rules: use {{COLOR_ENCODING_MODE}} mode. Follow this page-specific map exactly: {{COLOR_ROLE_MAP}}. Apply accents only to these targets: {{ACCENT_TARGETS}}.
+
+- Functional mode: color may distinguish stages, domains, or module families. A green or orange stage is allowed when the role map explicitly assigns it and the same mapping is repeated consistently in its heading, icon, connector, or pale tint. Pair every color with a number, heading, icon, or spatial group. Do not reuse the same color for an unrelated status meaning on the same page.
+- Status mode: green means verified or successful; orange means pending or attention; red means risk or failure. Pair every state color with a status word or icon and keep the accent compact.
+- In either mode, navy and cobalt anchor the page but must not turn the composition into one uninterrupted saturated-blue slab. Prefer white cards, pale 4–10% tints, colored header strips, icon circles, thin rules, and connector accents. Color should clarify grouping and rhythm, not decorate randomly.
+- The reference image may guide color balance and rhythm, but never copy a color assignment without fitting it to this page's role map.
 
 Constraints: preserve the selected reference image's polish, card language, icon language, spacing discipline, information density, and enterprise tone while creating an original composition. Ensure the main relationship is visually obvious within three seconds. Keep the title-safe area empty.
 
