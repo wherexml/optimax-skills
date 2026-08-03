@@ -1,0 +1,8 @@
+Skills Manager
+Copyright 2026 the Skills Manager contributors
+
+This product includes software from Anthropic's Agent Skills repository:
+https://github.com/anthropics/skills/tree/main/skills/skill-creator
+
+The included scripts/quick_validate.py file is redistributed from that work.
+Copyright 2026 Anthropic, PBC. Licensed under the Apache License, Version 2.0.

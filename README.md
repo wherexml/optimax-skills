@@ -11,6 +11,7 @@
 | Skill | 用途 | 详情 |
 | --- | --- | --- |
 | `optimax-ppt-imagegen` | 生成风格统一的企业级 PPT 信息图主视觉 | [查看说明](optimax-ppt-imagegen/SKILL.md) |
+| `skills-manager` | 检查、验证和安全打包可公开发布的 Agent Skills | [查看说明](skills-manager/SKILL.md) |
 
 后续新增的 Skills 将统一收录在这里。
 
