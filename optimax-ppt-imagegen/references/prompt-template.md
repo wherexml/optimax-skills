@@ -7,7 +7,8 @@ PAGE_TOPIC: page subject
 CORE_MESSAGE: one conclusion the viewer should understand
 LAYOUT_FAMILY: Stage rollout | Problem–solution–value | Operations pipeline | Agent orchestration
 MODULES_AND_FLOW: 3–7 modules and their directional relationships
-EXACT_LABELS: exact short Chinese labels to render
+COPY_MODE: natural executive Chinese | verbatim user wording
+EXACT_LABELS: final approved short Chinese labels to render verbatim after any copy rewrite
 COLOR_ENCODING_MODE: functional | status
 COLOR_ROLE_MAP: explicit mapping from navy, cobalt, green, orange, and optional red to stages, module families, or statuses
 ACCENT_TARGETS: exact headings, icons, connectors, badges, or pale card tints that receive each accent
@@ -38,7 +39,7 @@ Layout behavior:
 
 Color palette: deep navy #173F5F and cobalt blue #2F6FED as the visual anchor; support green #2E8B57 and orange #D98A00 as restrained accents; optional red only for genuine high risk or failure; white cards; very pale blue background; cool blue-gray outlines. Use at most three accent families beyond neutral blue-gray. Avoid purple and strong gradients.
 
-Typography: modern Chinese sans-serif appearance, bold deep-navy headings, short labels only, large enough for presentation readability. Render only the supplied text and render it verbatim. Do not invent English subtitles, paragraphs, placeholder copy, fake glyphs, or extra labels.
+Typography: modern Chinese sans-serif appearance, bold deep-navy headings, short labels only, large enough for presentation readability. Copy mode is {{COPY_MODE}}. Render only the final supplied labels and render them verbatim. Do not invent English subtitles, paragraphs, placeholder copy, fake glyphs, or extra labels.
 
 Text (verbatim): {{EXACT_LABELS}}
 
