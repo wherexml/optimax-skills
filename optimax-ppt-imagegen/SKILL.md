@@ -35,4 +35,3 @@ Generate polished raster PPT main visuals with a stable visual system and one of
 ## Fallback
 
 If no image-generation tool is available, produce the fully populated final prompt and identify the selected reference asset. Do not claim that an image was generated.
-

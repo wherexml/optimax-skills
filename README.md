@@ -21,4 +21,3 @@ Use $optimax-ppt-imagegen to generate a 21:9 PPT main visual for a supply-chain 
 ```
 
 The target AI must provide an image-generation tool to render the PNG. Without one, the skill returns a complete production prompt and the selected reference asset.
-

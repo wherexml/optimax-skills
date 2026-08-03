@@ -47,4 +47,3 @@ Constraints: preserve the selected reference image's polish, card language, icon
 
 Avoid: page title inside the image, real company logo, watermark, page number, browser frame, PowerPoint toolbar, website address, footer slogan, people, photographs, 3D objects, cartoon characters, robots, exaggerated gradients, glowing spheres, complex decoration, dark full-canvas background, dense tiny text, long paragraphs, invented text, fake glyphs, and purple gradients.
 ```
-
