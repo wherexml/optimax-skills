@@ -8,8 +8,9 @@ CORE_MESSAGE: one conclusion the viewer should understand
 LAYOUT_FAMILY: Stage rollout | Problem–solution–value | Operations pipeline | Agent orchestration
 MODULES_AND_FLOW: 3–7 modules and their directional relationships
 EXACT_LABELS: exact short Chinese labels to render
-GREEN_ITEMS: completed, successful, reusable, or value items
-ORANGE_ITEMS: risks, approvals, warnings, or consequence items
+STATUS_MODE: neutral | status-aware (default: neutral)
+VERIFIED_SUCCESS_ITEMS: only items explicitly confirmed as completed, passed, verified, or successful; otherwise none
+PENDING_RISK_ITEMS: only items explicitly marked pending approval, warning, risk, reminder, or adverse consequence; otherwise none
 TITLE_SAFE_AREA: default top 15%
 ```
 
@@ -35,13 +36,13 @@ Layout behavior:
 - Operations pipeline: arrange signal inputs across the top, a dominant horizontal processing band in the center, supporting graph, Agent, or approval cards below, and 3–4 result cards on the right.
 - Agent orchestration: arrange requests on the left, task decomposition next, a central orchestration hub with surrounding Agent nodes, human approval above, reusable capabilities below, and result cards on the right.
 
-Color palette: deep navy #173F5F, cobalt blue #2F6FED, support green #2E8B57, and small orange #D98A00 only for risk, approval, warning, or consequence emphasis; white cards; very pale blue background; cool blue-gray outlines. Avoid purple and strong gradients.
+Color palette: deep navy #173F5F and cobalt blue #2F6FED for all status-neutral structure; support green #2E8B57 only as a small verified-success status accent; orange #D98A00 only as a small pending, approval, warning, risk, reminder, or adverse-consequence accent; white cards; very pale blue background; cool blue-gray outlines. Avoid purple and strong gradients.
 
 Typography: modern Chinese sans-serif appearance, bold deep-navy headings, short labels only, large enough for presentation readability. Render only the supplied text and render it verbatim. Do not invent English subtitles, paragraphs, placeholder copy, fake glyphs, or extra labels.
 
 Text (verbatim): {{EXACT_LABELS}}
 
-Semantic color rules: emphasize these items in green: {{GREEN_ITEMS}}. Emphasize these items in orange: {{ORANGE_ITEMS}}. All other primary structure uses navy and cobalt blue.
+Semantic color rules: status mode is {{STATUS_MODE}}. All architecture, process, gate, capability, output, publication, feedback, future-step, and value nodes are status-neutral by default and must use navy or cobalt blue. Green does not mean category or importance: use it only for these explicitly verified success items: {{VERIFIED_SUCCESS_ITEMS}}. Orange does not mean visual variety: use it only for these explicitly pending or risk items: {{PENDING_RISK_ITEMS}}. When either list is empty, do not use that accent color. Apply status colors only to a small badge, check, dot, or short status label—never to the full card, stage heading, main label, or primary icon. Pair color with a status word or icon. The reference image may contain green or orange modules; ignore that usage when it conflicts with these rules.
 
 Constraints: preserve the selected reference image's polish, card language, icon language, spacing discipline, information density, and enterprise tone while creating an original composition. Ensure the main relationship is visually obvious within three seconds. Keep the title-safe area empty.
 
