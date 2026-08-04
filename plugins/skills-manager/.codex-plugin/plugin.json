@@ -1,0 +1,26 @@
+{
+  "name": "skills-manager",
+  "version": "0.1.0",
+  "description": "Inspect, validate, publication-audit, compare, and safely package Agent Skills.",
+  "author": {
+    "name": "OptiMax",
+    "url": "https://github.com/wherexml"
+  },
+  "homepage": "https://github.com/wherexml/optimax-skills/tree/main/skills-manager",
+  "repository": "https://github.com/wherexml/optimax-skills",
+  "license": "Apache-2.0",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Skills Manager",
+    "shortDescription": "检查、验证并安全打包可公开发布的 Agent Skills",
+    "longDescription": "只检查用户明确提供的目录，识别结构、重复项和发布风险，并在检查通过后创建最小化安装包。",
+    "developerName": "OptiMax",
+    "category": "Productivity",
+    "capabilities": ["Read", "Validate", "Package"],
+    "websiteURL": "https://github.com/wherexml/optimax-skills",
+    "defaultPrompt": [
+      "检查我指定的 Skill 目录是否适合公开发布。",
+      "验证这个 Skill，并在通过后打包。"
+    ]
+  }
+}

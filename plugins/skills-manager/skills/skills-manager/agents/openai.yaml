@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skills Manager"
+  short_description: "检查、验证并安全打包可公开发布的 Agent Skills"
+  default_prompt: "Use $skills-manager to inspect and validate the Skill directories I explicitly provide, then report whether they are portable and safe to publish without changing my local setup."

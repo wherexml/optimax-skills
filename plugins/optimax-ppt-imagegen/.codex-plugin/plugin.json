@@ -1,0 +1,25 @@
+{
+  "name": "optimax-ppt-imagegen",
+  "version": "0.1.0",
+  "description": "Create three distinct enterprise PPT infographic concepts with concise Chinese labels.",
+  "author": {
+    "name": "OptiMax",
+    "url": "https://github.com/wherexml"
+  },
+  "homepage": "https://github.com/wherexml/optimax-skills/tree/main/optimax-ppt-imagegen",
+  "repository": "https://github.com/wherexml/optimax-skills",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "OptiMax PPT ImageGen",
+    "shortDescription": "生成三套不同构图的企业级 PPT 信息图主视觉",
+    "longDescription": "将 PPT 内容转化为三套风格统一、构图不同、中文标签简洁自然的 21:9 企业级信息图方案。",
+    "developerName": "OptiMax",
+    "category": "Productivity",
+    "capabilities": ["Image generation", "Presentation design"],
+    "websiteURL": "https://github.com/wherexml/optimax-skills",
+    "defaultPrompt": [
+      "把这页 PPT 内容生成三套不同构图的信息图方案。",
+      "根据这份材料设计 21:9 的企业级 PPT 主视觉。"
+    ]
+  }
+}

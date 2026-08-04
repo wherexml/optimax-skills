@@ -1,0 +1,4 @@
+interface:
+  display_name: "OptiMax PPT ImageGen"
+  short_description: "默认生成三套不同构图、统一品牌风格的企业级 AI PPT 主图"
+  default_prompt: "Use $optimax-ppt-imagegen to turn my PPT content into three distinct 21:9 enterprise infographic design options with concise natural Chinese labels."

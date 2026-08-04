@@ -15,7 +15,30 @@
 
 后续新增的 Skills 将统一收录在这里。
 
-## 快速安装
+## 在 Codex Plugin 市场中使用
+
+在 Codex 的“添加插件市场”窗口中填写：
+
+- 来源：`wherexml/optimax-skills`
+- Git 引用：`main`
+- 稀疏路径：留空
+
+也可以使用命令添加市场：
+
+```bash
+codex plugin marketplace add wherexml/optimax-skills --ref main
+```
+
+市场添加成功后，可以在 Codex 中按需安装：
+
+```bash
+codex plugin add optimax-ppt-imagegen@optimax-skills
+codex plugin add skills-manager@optimax-skills
+```
+
+安装或更新后，请新建一个 Codex 任务使用插件。
+
+## 使用 Skills CLI 安装
 
 安装仓库中的指定 Skill：
 
@@ -51,8 +74,10 @@ npx --yes skills add wherexml/optimax-skills \
 
 ```text
 optimax-skills/
+├── .agents/plugins/marketplace.json  # Codex Plugin 市场清单
+├── plugins/                          # Codex 插件包
 ├── README.md
-└── <skill-name>/
+└── <skill-name>/                     # Skills CLI 的独立 Skill
     ├── SKILL.md          # 能力说明、工作流程与验收标准
     ├── agents/           # AI 工具展示信息
     ├── references/       # 规则、模板与参考资料
@@ -66,6 +91,7 @@ optimax-skills/
 
 - 一个目录只承载一个边界清晰的 Skill。
 - `SKILL.md` 是该能力的唯一入口，必须写清适用场景、执行流程和验收标准。
+- 顶层 Skill 是维护源；发布前必须确认 `plugins/<name>/skills/<name>/` 与它一致。
 - 示例、模板和静态资产放在 Skill 自己的目录内，不依赖维护者本机路径。
 - 不在 Skill 中写入账号、密钥、客户隐私或其他敏感信息。
 - 变更后应重新验证安装、资源引用和实际调用结果。

@@ -1,0 +1,32 @@
+{
+  "name": "optimax-skills",
+  "interface": {
+    "displayName": "OptiMax Skills"
+  },
+  "plugins": [
+    {
+      "name": "optimax-ppt-imagegen",
+      "source": {
+        "source": "local",
+        "path": "./plugins/optimax-ppt-imagegen"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "skills-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/skills-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
